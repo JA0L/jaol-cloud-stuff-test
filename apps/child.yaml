@@ -8,7 +8,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    chart: 'bitnami/mysql'
+    chart: 'mysql'
     repoURL: 'https://charts.bitnami.com/bitnami'
     targetRevision: 0.9.1 
     helm:
