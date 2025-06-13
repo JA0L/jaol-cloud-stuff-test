@@ -10,7 +10,7 @@ spec:
   source:
     chart: 'stable/mysql'
     repoURL: 'https://charts.helm.sh/stable'
-    targetRevision: HEAD
+    targetRevision: v7.2.1
     helm:
       valueFiles:
         - values.yaml
