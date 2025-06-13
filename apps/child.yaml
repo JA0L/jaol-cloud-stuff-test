@@ -10,7 +10,7 @@ spec:
   source:
     chart: bitnami/redis
     repoURL: 'https://charts.bitnami.com/bitnami'
-    targetRevision: 16.8.0
+    targetRevision: 21.2.3
     helm:
       valueFiles:
         - values.yaml
