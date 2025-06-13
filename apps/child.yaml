@@ -8,9 +8,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    chart: bitnami/wordpress
+    chart: bitnami/redis
     repoURL: 'https://charts.bitnami.com/bitnami'
-    targetRevision: 24.2.4
+    targetRevision: 16.8.0
     helm:
       valueFiles:
         - values.yaml
