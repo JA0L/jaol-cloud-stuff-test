@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: guessbook
+  name: child-app
 spec:
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 'helm-guestbook'
-    repoURL: 'https://github.com/argoproj/argocd-example-apps.git'
+    chart: 'stable/mysql'
+    repoURL: 'https://charts.helm.sh/stable'
     targetRevision: HEAD
     helm:
       valueFiles:
-        - https://github.com/argoproj/argocd-example-apps/blob/master/helm-guestbook/values.yaml
+        - values.yaml
   syncPolicy:
     automated:
       prune: true
