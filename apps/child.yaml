@@ -8,12 +8,12 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    chart: 'stable/mysql'
+    chart: 'bitnami/mysql'
     repoURL: 'https://charts.bitnami.com/bitnami'
-    targetRevision: v7.2.1
+    targetRevision: 0.9.1 
     helm:
       valueFiles:
-        - values.yaml
+        - ../values.yaml
   syncPolicy:
     automated:
       prune: true
