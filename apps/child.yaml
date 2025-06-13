@@ -4,7 +4,7 @@ metadata:
   name: child-app
 spec:
   destination:
-    namespace: argocd
+    namespace: redis
     server: https://kubernetes.default.svc
   project: default
   source:
